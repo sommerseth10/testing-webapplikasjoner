@@ -1,0 +1,54 @@
+@import "./globals.scss";
+
+form {
+    display: grid;
+    max-width: 350px;
+    width: 100%;
+    gap: 1rem;
+  
+    label,
+    input {
+      width: 100%
+    }
+  
+    input {
+      padding: 0.6rem 1rem;
+      background-color: #e0eae4;
+      border-radius: 6px;
+      font-size: 1.6rem;
+      border: 1px solid var(--black);
+  
+      &:placeholder {
+        filter: contast(1.2)
+      }
+    }
+  
+    .error {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: red
+    }
+
+    .success {
+      font-weight: 500;
+      font-size: 1.4rem;
+      color: green
+    }
+  
+    button {
+      max-width: max-content;
+      width: 100%;
+      border: none;
+      background-color: #439967;
+      padding: 0.6rem 2.5rem;
+      color: white;
+      font-size: 1.6rem;
+      border-radius: 6px;
+      font-weight: 500;
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+}
